@@ -3,6 +3,8 @@
 
 //probably pipe `$ convert <your-file-name.png> -depth 8 rgba:- | whitepcount
 
+//assumes `int` type is 32-bit. Probably should have gone something like __UINT32_T or something for portability 🤷
+
 #define white 0xFFFFFFFF
 #define num_ints 256
 #define bufsize (sizeof(int) * num_ints)
